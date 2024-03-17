@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Menu</title>
+</head>
+<body class="bg-slate-800">
+    <div class="bg-gray-200 h-44">
+        <h1 class="text-red-500">Ak recipe</h1>
+        <div class="flex justify-center">
+            <h1 class="italic font-semibold text-3xl text-black">Search your favourite recipes </h1>
+        </div>
+        
+        <div class="flex justify-center">
+            <input id="searchbox" class="border-2 border-black  px-2 py-1 focus:outline-none  mt-9 rounded-xl w-72" type="search" placeholder="Search">
+            <button id="searchbtn" class="border-2 border-red-400 bg-red-400 text-white w-20 mt-9 rounded-xl ">Search</button>
+        </div>
+    </div>
+    
+    
+    <div id="container" class="mt-16  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 text-white p-20 place-items-center ">
+        <h1 class="text-white   "> </h1>
+    </div>
+    <div class="recipe-details fixed top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 bg-red-700 rounded-xl w-[40%] h-[40%] text-2xl overflow-y-auto transition duration-500 ease-in-out scrollbar-thumb-gray-300 scrollbar-track-gray-100" style="display: none;">
+        <button type="button" class="recipe-close-btn border-none text-18px  text-black absolute top-2 right-4 text-4xl">&times;
+        </button>
+        <div class="recipe-details-content p-5">          
+        </div>
+    </div>
+    <script src="recipe.js"></script>
+    <img src="" alt="">
+    
+</body>
+</html>
